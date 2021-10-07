@@ -1,3 +1,4 @@
-/data
+data/*.pkl
+data/SideData.splite3
 /venv
 /__pycache__
