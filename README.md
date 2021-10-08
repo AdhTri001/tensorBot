@@ -1,5 +1,5 @@
 # TensorBot
-![](meta/tensor(glow).png)\
+![](meta/tensor(glow).png)
 
 This is a GUI based chatbot made with `tensorflow` and `PyQt5`. This also have speech recognisation implemented with `speech-recognisation` library.
 
