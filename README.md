@@ -1,5 +1,6 @@
 # TensorBot
-![](meta/tensor(glow).png)
+![](meta/tensor(glow).png)\
+
 This is a GUI based chatbot made with `tensorflow` and `PyQt5`. This also have speech recognisation implemented with `speech-recognisation` library.
 
 ## How to setup
@@ -16,8 +17,11 @@ To setup speech recognisation:
 3. Now go to `data/DataMake.py` and place your api key there and run it.
 
 To setup database:\
-The database will be automatically setuped when you run `DataMake.py`
+* The database will be automatically setuped when you run `DataMake.py`
+* If you want to add some cities that you want chatbot to get the time for when you ask for it (Like "Whats tha time in Delhi") go to `AddCity.py` and add you city there as prompted. The bot will recognise the city and will show you the time for it whenever you ask for.
 
 ## About this project
 
-I am a student of class 12<sup>th</sup> who loves doing programming. I made this project as a IP Project given to me. To me this bot came out OKay, I guess I won't be taking any pull requests, but you can still make one, if I like your commits I will merge. Tho you can feel free to make issues, I would love to help/modify the files.
+I am a student of grade 12<sup>th</sup>(my last year at school) who loves doing programming. I made this project as a IP Project given to me. To me this bot came out OKay, I guess I won't be taking any pull requests, but you can still make one, if I like your commits I will merge. Tho you can feel free to make issues, I would love to help/modify the files.
+
+Thank you for visiting this repository have a greate day!

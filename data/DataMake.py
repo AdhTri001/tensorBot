@@ -14,9 +14,9 @@ Dont touch the bollow part. This will ready your database.
 
 import sqlite3 as sql
 
-open('data/SideData.sqlite3', 'w+').close()
+open('data/SideData2.sqlite3', 'w+').close()
 
-conn = sql.connect('data/SideData.sqlite3')
+conn = sql.connect('data/SideData2.sqlite3')
 curs = conn.cursor()
 
 curs.execute("""
@@ -33,11 +33,19 @@ CREATE TABLE IF NOT EXISTS notes(
     unix_ts numeric
 )
 """)
+
+from pytz import country_names, country_timezones
+data = []
+
+for coun_code, coun_name in country_names.items():
+    data.append((coun_code.lower(), coun_name.lower(), None))
+
 curs.executemany("""
 INSERT INTO timezones VALUES(
     ?, ?, ?
 )
-""")
+""", data)
 
+conn.commit()
 curs.close()
 conn.close()
