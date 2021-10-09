@@ -1,5 +1,5 @@
 # TensorBot
-![](meta/tensor(glow).png)\
+![](meta/tensor(glow).png)
 
 This is a GUI based chatbot made with `tensorflow` and `PyQt5`. This also have speech recognisation implemented with `speech-recognisation` library.
 
@@ -16,7 +16,7 @@ To setup speech recognisation:
 2. To get the API key, go to the [Microsoft Azure Portal Resources](https://portal.azure.com/) page, go to All `Resources` > `Add` > `See` `All` > Search `Speech` > `Create`, and fill in the form to make a "Speech" resource. On the resulting page (which is also accessible from the "All Resources" page in the Azure Portal), go to the "Show Access Keys" page, which will have two API keys, either of which can be used for the key parameter.
 3. Now go to `data/DataMake.py` and place your api key there and run it.
 
-To setup database:\
+To setup database:
 * The database will be automatically setuped when you run `DataMake.py`
 * If you want to add some cities that you want chatbot to get the time for when you ask for it (Like "Whats tha time in Delhi") go to `AddCity.py` and add you city there as prompted. The bot will recognise the city and will show you the time for it whenever you ask for.
 
