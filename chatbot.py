@@ -83,7 +83,7 @@ class ChatBot:
             "it'd've": "it would have",
             "it'll": "it shall will",
             "it'll've": "it shall will have",
-            "it's": "it has is",
+            "it's": "it is",
             "let's": "let us",
             "ma'am": "madam",
             "mayn't": "may not",
@@ -415,24 +415,24 @@ class ChatBotFunctions:
 
         def textChanged(text: str):
             if len(text) < 2 or text == self.user_name:
-                nameFrame.save.setDisabled(True)
+                nameFrame.saveBtn.setDisabled(True)
             else:
-                nameFrame.save.setEnabled(True)
+                nameFrame.saveBtn.setEnabled(True)
 
         nameFrame.nameEdit.textChanged.connect(textChanged)
-        nameFrame.nameEdit.returnPressed.connect(nameFrame.save.click)
+        nameFrame.nameEdit.returnPressed.connect(nameFrame.saveBtn.click)
 
         def saveName():
             new_name = nameFrame.nameEdit.text()
             self.user_name = new_name
 
-        nameFrame.save.clicked.connect(saveName)
+        nameFrame.saveBtn.clicked.connect(saveName)
 
         def cancelName():
             nameFrame.nameEdit.setDisabled(True)
             nameFrame.cancel.setDisabled(True)
 
-        nameFrame.cancel.clicked.connect(cancelName)
+        nameFrame.cancelBtn.clicked.connect(cancelName)
         nameFrame.apply()
         return nameFrame
 
