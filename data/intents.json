@@ -330,7 +330,7 @@
     },
     {
         "intent"   : "recall_user_name",
-        "patterns" : ["what is my name","what will you call me","you now who i am"],
+        "patterns" : ["what is my name","what will you call me","you know who i am"],
         "func"     : "get_user_name"
     }
 ]
